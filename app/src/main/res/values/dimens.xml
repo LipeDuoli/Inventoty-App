@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="list_height">88dp</dimen>
+    <dimen name="list_item_left_margin">16dp</dimen>
+    <dimen name="editor_product_margin">16dp</dimen>
+</resources>

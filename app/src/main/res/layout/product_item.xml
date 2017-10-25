@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_height">
+
+    <TextView
+        android:id="@+id/product_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_item_left_margin"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/product_item_quantity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/product_item_sell_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Nome Produto" />
+
+    <TextView
+        android:id="@+id/product_item_quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_item_left_margin"
+        android:layout_marginRight="8dp"
+        android:textAppearance="?android:textAppearanceSmall"
+        app:layout_constraintBottom_toTopOf="@+id/product_item_price"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/product_item_sell_button"
+        app:layout_constraintTop_toBottomOf="@+id/product_item_name"
+        tools:text="Quantidade" />
+
+    <TextView
+        android:id="@+id/product_item_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_item_left_margin"
+        android:layout_marginRight="8dp"
+        android:textAppearance="?android:textAppearanceSmall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/product_item_sell_button"
+        app:layout_constraintTop_toBottomOf="@+id/product_item_quantity"
+        tools:text="Preço" />
+
+    <Button
+        android:id="@+id/product_item_sell_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="@string/sell_button_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
